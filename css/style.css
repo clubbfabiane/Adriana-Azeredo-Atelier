@@ -1,6 +1,3 @@
-.container{
-    display: none;
-}
 
 body {
     margin: 0;
@@ -71,6 +68,7 @@ body {
 .quemsomos-btn {
     grid-area: quemsomos-btn;
     display: grid;
+    width: 100%;
 }
 
 .tecnicas-btn {
@@ -135,7 +133,7 @@ body {
 
 #quem-somos {
     display: grid;
-    margin-top: 0;
+ 
 }
 
 .quemsomos-texto-imagem {
@@ -144,6 +142,7 @@ body {
 
 .quemsomos-texto {
     font-size: 1.3rem;
+    margin: 20px;
     padding: 5% 2% 1% 4%;
 }
 
@@ -167,6 +166,7 @@ body {
 
 .tecnicas-texto {
     font-size: 1.3rem;
+    margin: 20px;
     padding: 0% 2% 4% 4%;
 }
 
@@ -184,6 +184,7 @@ body {
 
 .cursos-texto {
     font-size: 1.3rem;
+    margin: 20px;
     padding: 0% 4% 2% 3%;
 }
 
@@ -197,13 +198,17 @@ body {
 
 .fotos-texto{
     font-size: 1.3rem;
+    margin: 20px;
 }
 
 .fotos-atelier{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
+
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: minmax(150px, auto);
-    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0ebeb;
 }
 
 /**PAMPA**/
@@ -220,6 +225,7 @@ body {
 
 .pampa-texto {
     font-size: 1.3rem;
+    margin: 20px;
     padding: 0% 2% 4% 4%;
 }
 
@@ -280,20 +286,26 @@ body {
     .nav-mobile {
         display: none;
     }
-
+    .right{
+        width: 100%;
+    }
+   
     .nav-desktop {
         display: block;
-        
+        position: fixed;
+        top: 15px;
+        width: 100%;
     }
 
-    .container-nav {
-        float: right;
-    }
     nav {
         list-style: none;
+        width: 600px;
+        margin: auto;
     }
+
     nav ul {
         margin-top: 1.1%;
+        background-color: rgba(255, 255, 255, 0.75);
     }
 
     nav>ul>li {
@@ -314,12 +326,17 @@ body {
     }
     
     /**HOME**/
+
+    #home-top{
+        top: 20px;
+    }
     #home-desktop{
         display: block;
-        background-image: url("../img/homeImgRect.jpg");
-        height: 600px;
+        background-image: url(../img/homeRectangle.jpg);
+        height: 703px;
         width: 100%;
-        margin-top: 60px;
+        margin-top: 67px;
+        margin-bottom: 30px;
         background-size: cover;
         background-position: center;
     }
@@ -340,15 +357,23 @@ body {
     
     .quemsomos-texto, .tecnicas-texto, .cursos-texto, .fotos-texto, .pampa-texto, .contato-texto {
         font-size: 1.3rem;
-        padding: 2% 2%;
+        padding: 3% 2% 2% 2%;
     }
     
     .quemsomos-imagem-round {
-        width:80%;
-        padding-top: 6%;
+        width: 67%;
+        padding-top: 0%;
         margin-left: 10%;
     }
+    /**FOTOS**/
     
+    .fotos-atelier{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(150px, auto);
+        grid-gap: 10px;
+        background-color: #e0ebeb;
+    }
    
     /**CONTACT DESKTOP**/
 
@@ -360,6 +385,16 @@ body {
     .a-phone{
         color: black;
         padding: 3%;
+    }
+
+    .contato-atelier{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(150px, auto);
+        grid-gap: 10px; 
+    }
+    .espaco-contato{
+        height: 150px;
     }
 
 }
