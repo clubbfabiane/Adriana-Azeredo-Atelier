@@ -151,7 +151,6 @@ body {   display: grid;
 .quemsomos-imagem-round {
     width:80%;
     padding-top: 6%;
-    margin-left: 10%;
 }
 
 /**TECNICAS**/
@@ -207,8 +206,6 @@ body {   display: grid;
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: minmax(150px, auto);
-    align-items: center;
-    justify-content: center;
     background-color: #e0ebeb;
 }
 .col1 img, .col2 img, .col3 img, .col4 img {
@@ -264,6 +261,10 @@ body {   display: grid;
     clear: both;
 }
 
+
+.section-center {
+    text-align: center;
+}
 
 @media only screen and (min-width: 736px) {
     
@@ -369,14 +370,11 @@ body {   display: grid;
     .quemsomos-imagem-round {
         width: 67%;
         padding-top: 0%;
-        margin-left: 10%;
     }
     /**FOTOS**/
     
     .fotos-atelier{
         display:grid;
-        align-items: left;
-        justify-content: left;
         grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: minmax(150px, auto);
         grid-gap: 10px;
