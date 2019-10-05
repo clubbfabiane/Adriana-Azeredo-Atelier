@@ -9,8 +9,8 @@ body {   display: grid;
 
 .gridList {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
     grid-template-areas: "home-btn" "quemsomos-btn" "tecnicas-btn" "cursos-btn" "fotos-btn" "pampa-btn" "contato-btn";
     padding-top: 0;
     padding-left: 0;
@@ -18,7 +18,6 @@ body {   display: grid;
 }
 
 .gridList>li {
-    justify-self: center;
     list-style-type: none;
     border: 1px solid #ccc;
     width: 100%;
@@ -29,7 +28,6 @@ body {   display: grid;
     color: #000;
     font-size: 1em;
     text-decoration: none;
-    padding: 0.3em;
     background-color: white;
     margin: auto;
 }
@@ -56,9 +54,7 @@ body {   display: grid;
 
 .home-btn {
     grid-area: home-btn;
-    display: grid;
-    width: 100%;
-    padding-bottom: 1%;
+    text-align: center;
 }
 
 .nav-grid a:hover{
@@ -69,28 +65,27 @@ body {   display: grid;
 
 .quemsomos-btn {
     grid-area: quemsomos-btn;
-    display: grid;
-    width: 100%;
+    text-align: center;
 }
 
 .tecnicas-btn {
     grid-area: tecnicas-btn;
-    display: grid;
+    text-align: center;
 }
 
 .cursos-btn {
     grid-area: cursos-btn;
-    display: grid;
+    text-align: center;
 }
 
 .fotos-btn {
     grid-area: fotos-btn;
-    display: grid;
+    text-align: center;
 }
 
 .contato-btn {
     grid-area: contato-btn;
-    display: grid;
+    text-align: center;
 }
 
 /**HOME**/
@@ -114,6 +109,11 @@ body {   display: grid;
 #home {
     display: grid; 
     width: 100%; 
+    height: 200px;
+    background-image: url('../img/homeRectangle.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .img-home{
@@ -129,6 +129,12 @@ body {   display: grid;
     position: absolute;
     top: 65%;
     left: 13%;
+}
+
+.atelier-logo-mobile {
+    max-width: 100%;
+    width: 75%;
+    margin: auto auto;
 }
 
 /**ABOUT US**/
