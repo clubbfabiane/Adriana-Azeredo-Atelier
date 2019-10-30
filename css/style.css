@@ -377,6 +377,13 @@ body {   display: grid;
         width: 67%;
         padding-top: 0%;
     }
+
+    /**CURSOS**/
+
+    .cursos-atuais{
+        margin: 30px 10px 0 0;
+    }
+
     /**FOTOS**/
     
     .fotos-atelier{
